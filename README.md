@@ -3,7 +3,7 @@ TrendPlay
 
 ## Tests
 #### Works on
-* Universal devices running iOS 12.1
+* Universal devices running iOS 12.1 or higher
 
 ## How to use this code
 * Clone TrendPlay repo to local desktop; maintain original folder structure
