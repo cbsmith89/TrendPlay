@@ -1,0 +1,949 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		066C741308433C19DAD18EB2 /* Pods_TrendPlay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB44532CDDFA6BD85B46C7CB /* Pods_TrendPlay.framework */; };
+		0C14B2D62166FB8D00CED42B /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C14B2D52166FB8D00CED42B /* CircularProgress.swift */; };
+		0C4B59DF2163919F00B77337 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C4B59DE2163919E00B77337 /* Images.xcassets */; };
+		0C52BCA31E4138260099F164 /* TeamDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C52BCA21E4138260099F164 /* TeamDashboardViewController.swift */; };
+		0C81992221C8CD3A00BFAC0E /* StatsDatabase.db in Resources */ = {isa = PBXBuildFile; fileRef = 0C81992121C8CD3A00BFAC0E /* StatsDatabase.db */; };
+		0C81992421C8CDE000BFAC0E /* Eureka.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C81992321C8CDE000BFAC0E /* Eureka.framework */; };
+		0C81992621C8CDE800BFAC0E /* Floaty.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C81992521C8CDE800BFAC0E /* Floaty.framework */; };
+		0C81992821C8CDEF00BFAC0E /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C81992721C8CDEF00BFAC0E /* FMDB.framework */; };
+		0C81992A21C8CDF700BFAC0E /* MaterialComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C81992921C8CDF700BFAC0E /* MaterialComponents.framework */; };
+		0C81992C21C8CDFD00BFAC0E /* SwiftRangeSlider.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C81992B21C8CDFD00BFAC0E /* SwiftRangeSlider.framework */; };
+		0C9106CD21882A960058D8F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0C9106CC21882A950058D8F6 /* GoogleService-Info.plist */; };
+		0CA0324A217EFF7A00A52002 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA03241217EFF7900A52002 /* Options.swift */; };
+		0CA0324B217EFF7A00A52002 /* BetterSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA03242217EFF7900A52002 /* BetterSegmentedControl.swift */; };
+		0CA0324C217EFF7A00A52002 /* BetterSegmentedControlSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA03243217EFF7900A52002 /* BetterSegmentedControlSegment.swift */; };
+		0CA0324E217EFF7A00A52002 /* IconSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA03246217EFF7900A52002 /* IconSegment.swift */; };
+		0CA0324F217EFF7A00A52002 /* LabelSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA03247217EFF7900A52002 /* LabelSegment.swift */; };
+		0CA5F96C213D09FB000E525D /* SFCompactDisplay-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F939213D09FA000E525D /* SFCompactDisplay-Heavy.otf */; };
+		0CA5F96F213D09FB000E525D /* SFCompactDisplay-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F93C213D09FA000E525D /* SFCompactDisplay-Light.otf */; };
+		0CA5F972213D09FB000E525D /* SFCompactDisplay-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F93F213D09FA000E525D /* SFCompactDisplay-Semibold.otf */; };
+		0CA5F973213D09FB000E525D /* SFCompactDisplay-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F940213D09FA000E525D /* SFCompactDisplay-Medium.otf */; };
+		0CA5F974213D09FB000E525D /* SFCompactDisplay-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F941213D09FA000E525D /* SFCompactDisplay-Black.otf */; };
+		0CA5F975213D09FB000E525D /* SFCompactDisplay-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F942213D09FA000E525D /* SFCompactDisplay-Regular.otf */; };
+		0CA5F97A213D09FB000E525D /* SFCompactDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F947213D09FA000E525D /* SFCompactDisplay-Bold.otf */; };
+		0CA5F97C213D09FB000E525D /* SFCompactDisplay-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F949213D09FA000E525D /* SFCompactDisplay-Ultralight.otf */; };
+		0CA5F980213D09FB000E525D /* SFCompactDisplay-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F94D213D09FA000E525D /* SFCompactDisplay-Thin.otf */; };
+		0CA5F9A0213D0CAD000E525D /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F982213D0CAC000E525D /* SF-Pro-Display-Thin.otf */; };
+		0CA5F9A1213D0CAD000E525D /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F983213D0CAC000E525D /* SF-Pro-Display-SemiboldItalic.otf */; };
+		0CA5F9A3213D0CAD000E525D /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F985213D0CAC000E525D /* SF-Pro-Display-RegularItalic.otf */; };
+		0CA5F9A4213D0CAD000E525D /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F986213D0CAC000E525D /* SF-Pro-Display-Light.otf */; };
+		0CA5F9A5213D0CAD000E525D /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F987213D0CAC000E525D /* SF-Pro-Display-Regular.otf */; };
+		0CA5F9A7213D0CAD000E525D /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F989213D0CAC000E525D /* SF-Pro-Display-Bold.otf */; };
+		0CA5F9A8213D0CAD000E525D /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F98A213D0CAC000E525D /* SF-Pro-Display-Medium.otf */; };
+		0CA5F9A9213D0CAD000E525D /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F98B213D0CAC000E525D /* SF-Pro-Display-Heavy.otf */; };
+		0CA5F9AB213D0CAD000E525D /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F98D213D0CAC000E525D /* SF-Pro-Display-Semibold.otf */; };
+		0CA5F9AE213D0CAD000E525D /* SF-Pro-Display-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F990213D0CAC000E525D /* SF-Pro-Display-MediumItalic.otf */; };
+		0CA5F9AF213D0CAD000E525D /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F991213D0CAC000E525D /* SF-Pro-Display-HeavyItalic.otf */; };
+		0CA5F9B0213D0CAD000E525D /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F992213D0CAC000E525D /* SF-Pro-Display-Ultralight.otf */; };
+		0CA5F9B1213D0CAD000E525D /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F993213D0CAC000E525D /* SF-Pro-Display-UltralightItalic.otf */; };
+		0CA5F9B2213D0CAD000E525D /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F994213D0CAC000E525D /* SF-Pro-Display-LightItalic.otf */; };
+		0CA5F9B3213D0CAD000E525D /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F995213D0CAC000E525D /* SF-Pro-Display-BlackItalic.otf */; };
+		0CA5F9B4213D0CAD000E525D /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F996213D0CAC000E525D /* SF-Pro-Display-Black.otf */; };
+		0CA5F9B9213D0CAD000E525D /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F99B213D0CAC000E525D /* SF-Pro-Display-ThinItalic.otf */; };
+		0CA5F9BC213D0CAD000E525D /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F99E213D0CAC000E525D /* SF-Pro-Display-BoldItalic.otf */; };
+		0CA5F9CD213D1261000E525D /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F9C0213D1260000E525D /* Roboto-Medium.ttf */; };
+		0CA5F9CE213D1261000E525D /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F9C1213D1260000E525D /* Roboto-Light.ttf */; };
+		0CA5F9CF213D1261000E525D /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F9C2213D1260000E525D /* Roboto-Regular.ttf */; };
+		0CA5F9D7213D1261000E525D /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F9CA213D1260000E525D /* Roboto-Bold.ttf */; };
+		0CA5F9D8213D1261000E525D /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F9CB213D1260000E525D /* Roboto-Thin.ttf */; };
+		0CA5F9D9213D1261000E525D /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F9CC213D1260000E525D /* Roboto-Black.ttf */; };
+		0CA5F9E2213D1277000E525D /* RobotoCondensed-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F9DB213D1276000E525D /* RobotoCondensed-Bold.ttf */; };
+		0CA5F9E3213D1277000E525D /* RobotoCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F9DC213D1276000E525D /* RobotoCondensed-Light.ttf */; };
+		0CA5F9E7213D1277000E525D /* RobotoCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CA5F9E0213D1276000E525D /* RobotoCondensed-Regular.ttf */; };
+		0CA9DB961EC9FC7100CF8946 /* TeamNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9DB951EC9FC7100CF8946 /* TeamNavigationController.swift */; };
+		0CA9DB981EC9FC8800CF8946 /* PlayerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9DB971EC9FC8800CF8946 /* PlayerNavigationController.swift */; };
+		0CA9DB9B1ECA091B00CF8946 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA9DB9A1ECA091B00CF8946 /* TabBarController.swift */; };
+		0CAFAEFD1F3D93A300AAAF96 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAFAEFC1F3D93A300AAAF96 /* CustomTableViewCell.swift */; };
+		0CC80C781F5B862400F1742A /* SliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80C771F5B862400F1742A /* SliderViewController.swift */; };
+		0CC80C7A1F5B872F00F1742A /* SearchableMultiSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CC80C791F5B872F00F1742A /* SearchableMultiSelectViewController.swift */; };
+		0CD1CC68214CA7B200703A84 /* PlayerDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1CC67214CA7B200703A84 /* PlayerDashboardViewController.swift */; };
+		0CD1CC6B2150A51F00703A84 /* PlayerSearchableMultiSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1CC692150A51E00703A84 /* PlayerSearchableMultiSelectViewController.swift */; };
+		0CD1CC6C2150A51F00703A84 /* PlayerSliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD1CC6A2150A51F00703A84 /* PlayerSliderViewController.swift */; };
+		0CE26E83217C9F6000161521 /* NVActivityIndicatorAnimationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E59217C9F6000161521 /* NVActivityIndicatorAnimationDelegate.swift */; };
+		0CE26E84217C9F6000161521 /* NVActivityIndicatorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E5B217C9F6000161521 /* NVActivityIndicatorPresenter.swift */; };
+		0CE26E85217C9F6000161521 /* NVActivityIndicatorViewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E5C217C9F6000161521 /* NVActivityIndicatorViewable.swift */; };
+		0CE26E86217C9F6000161521 /* NVActivityIndicatorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E5E217C9F6000161521 /* NVActivityIndicatorShape.swift */; };
+		0CE26E87217C9F6000161521 /* NVActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E5F217C9F6000161521 /* NVActivityIndicatorView.swift */; };
+		0CE26E89217C9F6000161521 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E62217C9F6000161521 /* NVActivityIndicatorAnimationBallRotate.swift */; };
+		0CE26E8A217C9F6000161521 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E63217C9F6000161521 /* NVActivityIndicatorAnimationBallGridPulse.swift */; };
+		0CE26E8B217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E64217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotate.swift */; };
+		0CE26E8C217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E65217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */; };
+		0CE26E8D217C9F6000161521 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E66217C9F6000161521 /* NVActivityIndicatorAnimationBallTrianglePath.swift */; };
+		0CE26E8E217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E67217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */; };
+		0CE26E8F217C9F6000161521 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E68217C9F6000161521 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */; };
+		0CE26E90217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E69217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */; };
+		0CE26E91217C9F6000161521 /* NVActivityIndicatorAnimationBallScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E6A217C9F6000161521 /* NVActivityIndicatorAnimationBallScale.swift */; };
+		0CE26E92217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E6B217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZag.swift */; };
+		0CE26E93217C9F6000161521 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E6C217C9F6000161521 /* NVActivityIndicatorAnimationBallBeat.swift */; };
+		0CE26E94217C9F6000161521 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E6D217C9F6000161521 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */; };
+		0CE26E95217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E6E217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRipple.swift */; };
+		0CE26E96217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E6F217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */; };
+		0CE26E97217C9F6000161521 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E70217C9F6000161521 /* NVActivityIndicatorAnimationSquareSpin.swift */; };
+		0CE26E98217C9F6000161521 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E71217C9F6000161521 /* NVActivityIndicatorAnimationBallRotateChase.swift */; };
+		0CE26E99217C9F6000161521 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E72217C9F6000161521 /* NVActivityIndicatorAnimationBallPulse.swift */; };
+		0CE26E9A217C9F6000161521 /* NVActivityIndicatorAnimationBlank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E73217C9F6000161521 /* NVActivityIndicatorAnimationBlank.swift */; };
+		0CE26E9B217C9F6000161521 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E74217C9F6000161521 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */; };
+		0CE26E9C217C9F6000161521 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E75217C9F6000161521 /* NVActivityIndicatorAnimationAudioEqualizer.swift */; };
+		0CE26E9D217C9F6000161521 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E76217C9F6000161521 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */; };
+		0CE26E9E217C9F6000161521 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E77217C9F6000161521 /* NVActivityIndicatorAnimationBallGridBeat.swift */; };
+		0CE26E9F217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E78217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */; };
+		0CE26EA0217C9F6000161521 /* NVActivityIndicatorAnimationLineScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E79217C9F6000161521 /* NVActivityIndicatorAnimationLineScale.swift */; };
+		0CE26EA1217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E7A217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */; };
+		0CE26EA2217C9F6000161521 /* NVActivityIndicatorAnimationPacman.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E7B217C9F6000161521 /* NVActivityIndicatorAnimationPacman.swift */; };
+		0CE26EA3217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E7C217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseSync.swift */; };
+		0CE26EA4217C9F6000161521 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E7D217C9F6000161521 /* NVActivityIndicatorAnimationCubeTransition.swift */; };
+		0CE26EA5217C9F6000161521 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E7E217C9F6000161521 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */; };
+		0CE26EA6217C9F6000161521 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E7F217C9F6000161521 /* NVActivityIndicatorAnimationLineScaleParty.swift */; };
+		0CE26EA7217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E80217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */; };
+		0CE26EA8217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E81217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseRise.swift */; };
+		0CE26EA9217C9F6000161521 /* NVActivityIndicatorAnimationOrbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE26E82217C9F6000161521 /* NVActivityIndicatorAnimationOrbit.swift */; };
+		0CE2B7971F6BAC4000215BFD /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE2B7951F6BAC4000215BFD /* SplashScreenViewController.swift */; };
+		0CE2B79C1F6BB44500215BFD /* TrendPlayLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CE2B79B1F6BB44500215BFD /* TrendPlayLogo.png */; };
+		0CE2EEE01EABDFF900ABC66B /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE2EEDF1EABDFF900ABC66B /* TeamViewController.swift */; };
+		0CE2EEE21EABE00B00ABC66B /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE2EEE11EABE00B00ABC66B /* PlayerViewController.swift */; };
+		0CFAAD2A1E21BA2D008D5DBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAAD291E21BA2D008D5DBB /* AppDelegate.swift */; };
+		0CFAAD2C1E21BA2D008D5DBB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFAAD2B1E21BA2D008D5DBB /* HomeViewController.swift */; };
+		0CFAAD311E21BA2D008D5DBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFAAD2F1E21BA2D008D5DBB /* Main.storyboard */; };
+		0CFAAD361E21BA2D008D5DBB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFAAD341E21BA2D008D5DBB /* LaunchScreen.storyboard */; };
+		0CFBA257213E8581000BACBC /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFBA256213E8581000BACBC /* libsqlite3.tbd */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C14B2D52166FB8D00CED42B /* CircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		0C4B59DE2163919E00B77337 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		0C52BCA21E4138260099F164 /* TeamDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamDashboardViewController.swift; sourceTree = "<group>"; };
+		0C81992121C8CD3A00BFAC0E /* StatsDatabase.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = StatsDatabase.db; sourceTree = "<group>"; };
+		0C81992321C8CDE000BFAC0E /* Eureka.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Eureka.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C81992521C8CDE800BFAC0E /* Floaty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Floaty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C81992721C8CDEF00BFAC0E /* FMDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FMDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C81992921C8CDF700BFAC0E /* MaterialComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MaterialComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C81992B21C8CDFD00BFAC0E /* SwiftRangeSlider.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftRangeSlider.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C9106CC21882A950058D8F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0CA03241217EFF7900A52002 /* Options.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		0CA03242217EFF7900A52002 /* BetterSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterSegmentedControl.swift; sourceTree = "<group>"; };
+		0CA03243217EFF7900A52002 /* BetterSegmentedControlSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BetterSegmentedControlSegment.swift; sourceTree = "<group>"; };
+		0CA03246217EFF7900A52002 /* IconSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconSegment.swift; sourceTree = "<group>"; };
+		0CA03247217EFF7900A52002 /* LabelSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSegment.swift; sourceTree = "<group>"; };
+		0CA5F939213D09FA000E525D /* SFCompactDisplay-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Heavy.otf"; sourceTree = "<group>"; };
+		0CA5F93C213D09FA000E525D /* SFCompactDisplay-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Light.otf"; sourceTree = "<group>"; };
+		0CA5F93F213D09FA000E525D /* SFCompactDisplay-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Semibold.otf"; sourceTree = "<group>"; };
+		0CA5F940213D09FA000E525D /* SFCompactDisplay-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Medium.otf"; sourceTree = "<group>"; };
+		0CA5F941213D09FA000E525D /* SFCompactDisplay-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Black.otf"; sourceTree = "<group>"; };
+		0CA5F942213D09FA000E525D /* SFCompactDisplay-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Regular.otf"; sourceTree = "<group>"; };
+		0CA5F947213D09FA000E525D /* SFCompactDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Bold.otf"; sourceTree = "<group>"; };
+		0CA5F949213D09FA000E525D /* SFCompactDisplay-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Ultralight.otf"; sourceTree = "<group>"; };
+		0CA5F94D213D09FA000E525D /* SFCompactDisplay-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFCompactDisplay-Thin.otf"; sourceTree = "<group>"; };
+		0CA5F982213D0CAC000E525D /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		0CA5F983213D0CAC000E525D /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		0CA5F985213D0CAC000E525D /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		0CA5F986213D0CAC000E525D /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		0CA5F987213D0CAC000E525D /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		0CA5F989213D0CAC000E525D /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		0CA5F98A213D0CAC000E525D /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		0CA5F98B213D0CAC000E525D /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		0CA5F98D213D0CAC000E525D /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		0CA5F990213D0CAC000E525D /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		0CA5F991213D0CAC000E525D /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		0CA5F992213D0CAC000E525D /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		0CA5F993213D0CAC000E525D /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		0CA5F994213D0CAC000E525D /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		0CA5F995213D0CAC000E525D /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
+		0CA5F996213D0CAC000E525D /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		0CA5F99B213D0CAC000E525D /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		0CA5F99E213D0CAC000E525D /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+		0CA5F9C0213D1260000E525D /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		0CA5F9C1213D1260000E525D /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		0CA5F9C2213D1260000E525D /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		0CA5F9CA213D1260000E525D /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		0CA5F9CB213D1260000E525D /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		0CA5F9CC213D1260000E525D /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		0CA5F9DB213D1276000E525D /* RobotoCondensed-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Bold.ttf"; sourceTree = "<group>"; };
+		0CA5F9DC213D1276000E525D /* RobotoCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Light.ttf"; sourceTree = "<group>"; };
+		0CA5F9E0213D1276000E525D /* RobotoCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "RobotoCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		0CA9DB951EC9FC7100CF8946 /* TeamNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamNavigationController.swift; sourceTree = "<group>"; };
+		0CA9DB971EC9FC8800CF8946 /* PlayerNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerNavigationController.swift; sourceTree = "<group>"; };
+		0CA9DB9A1ECA091B00CF8946 /* TabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		0CAFAEFC1F3D93A300AAAF96 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		0CC80C771F5B862400F1742A /* SliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderViewController.swift; sourceTree = "<group>"; };
+		0CC80C791F5B872F00F1742A /* SearchableMultiSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableMultiSelectViewController.swift; sourceTree = "<group>"; };
+		0CD1CC67214CA7B200703A84 /* PlayerDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDashboardViewController.swift; sourceTree = "<group>"; };
+		0CD1CC692150A51E00703A84 /* PlayerSearchableMultiSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSearchableMultiSelectViewController.swift; sourceTree = "<group>"; };
+		0CD1CC6A2150A51F00703A84 /* PlayerSliderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerSliderViewController.swift; sourceTree = "<group>"; };
+		0CE26E59217C9F6000161521 /* NVActivityIndicatorAnimationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationDelegate.swift; sourceTree = "<group>"; };
+		0CE26E5B217C9F6000161521 /* NVActivityIndicatorPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorPresenter.swift; sourceTree = "<group>"; };
+		0CE26E5C217C9F6000161521 /* NVActivityIndicatorViewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorViewable.swift; sourceTree = "<group>"; };
+		0CE26E5D217C9F6000161521 /* NVActivityIndicatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVActivityIndicatorView.h; sourceTree = "<group>"; };
+		0CE26E5E217C9F6000161521 /* NVActivityIndicatorShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorShape.swift; sourceTree = "<group>"; };
+		0CE26E5F217C9F6000161521 /* NVActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorView.swift; sourceTree = "<group>"; };
+		0CE26E62217C9F6000161521 /* NVActivityIndicatorAnimationBallRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallRotate.swift; sourceTree = "<group>"; };
+		0CE26E63217C9F6000161521 /* NVActivityIndicatorAnimationBallGridPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallGridPulse.swift; sourceTree = "<group>"; };
+		0CE26E64217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallClipRotate.swift; sourceTree = "<group>"; };
+		0CE26E65217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallClipRotateMultiple.swift; sourceTree = "<group>"; };
+		0CE26E66217C9F6000161521 /* NVActivityIndicatorAnimationBallTrianglePath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallTrianglePath.swift; sourceTree = "<group>"; };
+		0CE26E67217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineScalePulseOut.swift; sourceTree = "<group>"; };
+		0CE26E68217C9F6000161521 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineSpinFadeLoader.swift; sourceTree = "<group>"; };
+		0CE26E69217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallZigZagDeflect.swift; sourceTree = "<group>"; };
+		0CE26E6A217C9F6000161521 /* NVActivityIndicatorAnimationBallScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallScale.swift; sourceTree = "<group>"; };
+		0CE26E6B217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallZigZag.swift; sourceTree = "<group>"; };
+		0CE26E6C217C9F6000161521 /* NVActivityIndicatorAnimationBallBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallBeat.swift; sourceTree = "<group>"; };
+		0CE26E6D217C9F6000161521 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationSemiCircleSpin.swift; sourceTree = "<group>"; };
+		0CE26E6E217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRipple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallScaleRipple.swift; sourceTree = "<group>"; };
+		0CE26E6F217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallClipRotatePulse.swift; sourceTree = "<group>"; };
+		0CE26E70217C9F6000161521 /* NVActivityIndicatorAnimationSquareSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationSquareSpin.swift; sourceTree = "<group>"; };
+		0CE26E71217C9F6000161521 /* NVActivityIndicatorAnimationBallRotateChase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallRotateChase.swift; sourceTree = "<group>"; };
+		0CE26E72217C9F6000161521 /* NVActivityIndicatorAnimationBallPulse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallPulse.swift; sourceTree = "<group>"; };
+		0CE26E73217C9F6000161521 /* NVActivityIndicatorAnimationBlank.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBlank.swift; sourceTree = "<group>"; };
+		0CE26E74217C9F6000161521 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationCircleStrokeSpin.swift; sourceTree = "<group>"; };
+		0CE26E75217C9F6000161521 /* NVActivityIndicatorAnimationAudioEqualizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationAudioEqualizer.swift; sourceTree = "<group>"; };
+		0CE26E76217C9F6000161521 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationTriangleSkewSpin.swift; sourceTree = "<group>"; };
+		0CE26E77217C9F6000161521 /* NVActivityIndicatorAnimationBallGridBeat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallGridBeat.swift; sourceTree = "<group>"; };
+		0CE26E78217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallScaleMultiple.swift; sourceTree = "<group>"; };
+		0CE26E79217C9F6000161521 /* NVActivityIndicatorAnimationLineScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineScale.swift; sourceTree = "<group>"; };
+		0CE26E7A217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallScaleRippleMultiple.swift; sourceTree = "<group>"; };
+		0CE26E7B217C9F6000161521 /* NVActivityIndicatorAnimationPacman.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationPacman.swift; sourceTree = "<group>"; };
+		0CE26E7C217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseSync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallPulseSync.swift; sourceTree = "<group>"; };
+		0CE26E7D217C9F6000161521 /* NVActivityIndicatorAnimationCubeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationCubeTransition.swift; sourceTree = "<group>"; };
+		0CE26E7E217C9F6000161521 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallSpinFadeLoader.swift; sourceTree = "<group>"; };
+		0CE26E7F217C9F6000161521 /* NVActivityIndicatorAnimationLineScaleParty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineScaleParty.swift; sourceTree = "<group>"; };
+		0CE26E80217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationLineScalePulseOutRapid.swift; sourceTree = "<group>"; };
+		0CE26E81217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseRise.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationBallPulseRise.swift; sourceTree = "<group>"; };
+		0CE26E82217C9F6000161521 /* NVActivityIndicatorAnimationOrbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NVActivityIndicatorAnimationOrbit.swift; sourceTree = "<group>"; };
+		0CE2B7951F6BAC4000215BFD /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		0CE2B79B1F6BB44500215BFD /* TrendPlayLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TrendPlayLogo.png; sourceTree = "<group>"; };
+		0CE2EEDF1EABDFF900ABC66B /* TeamViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
+		0CE2EEE11EABE00B00ABC66B /* PlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		0CFAAD261E21BA2D008D5DBB /* TrendPlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrendPlay.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CFAAD291E21BA2D008D5DBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0CFAAD2B1E21BA2D008D5DBB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		0CFAAD301E21BA2D008D5DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0CFAAD351E21BA2D008D5DBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0CFAAD371E21BA2D008D5DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFAAD401E21BA2D008D5DBB /* TrendPlayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendPlayTests.swift; sourceTree = "<group>"; };
+		0CFAAD421E21BA2D008D5DBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CFBA256213E8581000BACBC /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		34F5CEADA6CCE2A0A75496CF /* Pods-TrendPlay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendPlay.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrendPlay/Pods-TrendPlay.release.xcconfig"; sourceTree = "<group>"; };
+		65CA9ACC63F9F2D9B56CF282 /* Pods-TrendPlay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrendPlay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrendPlay/Pods-TrendPlay.debug.xcconfig"; sourceTree = "<group>"; };
+		FB44532CDDFA6BD85B46C7CB /* Pods_TrendPlay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrendPlay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CFAAD231E21BA2D008D5DBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C81992C21C8CDFD00BFAC0E /* SwiftRangeSlider.framework in Frameworks */,
+				0C81992A21C8CDF700BFAC0E /* MaterialComponents.framework in Frameworks */,
+				0C81992821C8CDEF00BFAC0E /* FMDB.framework in Frameworks */,
+				0C81992621C8CDE800BFAC0E /* Floaty.framework in Frameworks */,
+				0C81992421C8CDE000BFAC0E /* Eureka.framework in Frameworks */,
+				0CFBA257213E8581000BACBC /* libsqlite3.tbd in Frameworks */,
+				066C741308433C19DAD18EB2 /* Pods_TrendPlay.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CA5F918213D09FA000E525D /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5F9BF213D1260000E525D /* Roboto */,
+				0CA5F9DA213D1276000E525D /* Roboto Condensed */,
+				0CA5F938213D09FA000E525D /* SF Compact */,
+				0CA5F981213D0CAC000E525D /* SF Pro */,
+			);
+			name = Fonts;
+			path = TrendPlay/Fonts;
+			sourceTree = "<group>";
+		};
+		0CA5F938213D09FA000E525D /* SF Compact */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5F941213D09FA000E525D /* SFCompactDisplay-Black.otf */,
+				0CA5F947213D09FA000E525D /* SFCompactDisplay-Bold.otf */,
+				0CA5F939213D09FA000E525D /* SFCompactDisplay-Heavy.otf */,
+				0CA5F93C213D09FA000E525D /* SFCompactDisplay-Light.otf */,
+				0CA5F940213D09FA000E525D /* SFCompactDisplay-Medium.otf */,
+				0CA5F942213D09FA000E525D /* SFCompactDisplay-Regular.otf */,
+				0CA5F93F213D09FA000E525D /* SFCompactDisplay-Semibold.otf */,
+				0CA5F94D213D09FA000E525D /* SFCompactDisplay-Thin.otf */,
+				0CA5F949213D09FA000E525D /* SFCompactDisplay-Ultralight.otf */,
+			);
+			path = "SF Compact";
+			sourceTree = "<group>";
+		};
+		0CA5F981213D0CAC000E525D /* SF Pro */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5F996213D0CAC000E525D /* SF-Pro-Display-Black.otf */,
+				0CA5F995213D0CAC000E525D /* SF-Pro-Display-BlackItalic.otf */,
+				0CA5F989213D0CAC000E525D /* SF-Pro-Display-Bold.otf */,
+				0CA5F99E213D0CAC000E525D /* SF-Pro-Display-BoldItalic.otf */,
+				0CA5F98B213D0CAC000E525D /* SF-Pro-Display-Heavy.otf */,
+				0CA5F991213D0CAC000E525D /* SF-Pro-Display-HeavyItalic.otf */,
+				0CA5F986213D0CAC000E525D /* SF-Pro-Display-Light.otf */,
+				0CA5F994213D0CAC000E525D /* SF-Pro-Display-LightItalic.otf */,
+				0CA5F98A213D0CAC000E525D /* SF-Pro-Display-Medium.otf */,
+				0CA5F990213D0CAC000E525D /* SF-Pro-Display-MediumItalic.otf */,
+				0CA5F987213D0CAC000E525D /* SF-Pro-Display-Regular.otf */,
+				0CA5F985213D0CAC000E525D /* SF-Pro-Display-RegularItalic.otf */,
+				0CA5F98D213D0CAC000E525D /* SF-Pro-Display-Semibold.otf */,
+				0CA5F983213D0CAC000E525D /* SF-Pro-Display-SemiboldItalic.otf */,
+				0CA5F982213D0CAC000E525D /* SF-Pro-Display-Thin.otf */,
+				0CA5F99B213D0CAC000E525D /* SF-Pro-Display-ThinItalic.otf */,
+				0CA5F992213D0CAC000E525D /* SF-Pro-Display-Ultralight.otf */,
+				0CA5F993213D0CAC000E525D /* SF-Pro-Display-UltralightItalic.otf */,
+			);
+			name = "SF Pro";
+			path = "../../../../Library/Fonts/SF Pro";
+			sourceTree = "<group>";
+		};
+		0CA5F9BF213D1260000E525D /* Roboto */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5F9CC213D1260000E525D /* Roboto-Black.ttf */,
+				0CA5F9CA213D1260000E525D /* Roboto-Bold.ttf */,
+				0CA5F9C1213D1260000E525D /* Roboto-Light.ttf */,
+				0CA5F9C0213D1260000E525D /* Roboto-Medium.ttf */,
+				0CA5F9C2213D1260000E525D /* Roboto-Regular.ttf */,
+				0CA5F9CB213D1260000E525D /* Roboto-Thin.ttf */,
+			);
+			path = Roboto;
+			sourceTree = "<group>";
+		};
+		0CA5F9DA213D1276000E525D /* Roboto Condensed */ = {
+			isa = PBXGroup;
+			children = (
+				0CA5F9DB213D1276000E525D /* RobotoCondensed-Bold.ttf */,
+				0CA5F9DC213D1276000E525D /* RobotoCondensed-Light.ttf */,
+				0CA5F9E0213D1276000E525D /* RobotoCondensed-Regular.ttf */,
+			);
+			path = "Roboto Condensed";
+			sourceTree = "<group>";
+		};
+		0CE26E58217C9F6000161521 /* NVActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				0CE26E59217C9F6000161521 /* NVActivityIndicatorAnimationDelegate.swift */,
+				0CE26E5A217C9F6000161521 /* Presenter */,
+				0CE26E5D217C9F6000161521 /* NVActivityIndicatorView.h */,
+				0CE26E5E217C9F6000161521 /* NVActivityIndicatorShape.swift */,
+				0CE26E5F217C9F6000161521 /* NVActivityIndicatorView.swift */,
+				0CE26E61217C9F6000161521 /* Animations */,
+			);
+			path = NVActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		0CE26E5A217C9F6000161521 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				0CE26E5B217C9F6000161521 /* NVActivityIndicatorPresenter.swift */,
+				0CE26E5C217C9F6000161521 /* NVActivityIndicatorViewable.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		0CE26E61217C9F6000161521 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				0CE26E62217C9F6000161521 /* NVActivityIndicatorAnimationBallRotate.swift */,
+				0CE26E63217C9F6000161521 /* NVActivityIndicatorAnimationBallGridPulse.swift */,
+				0CE26E64217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotate.swift */,
+				0CE26E65217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift */,
+				0CE26E66217C9F6000161521 /* NVActivityIndicatorAnimationBallTrianglePath.swift */,
+				0CE26E67217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOut.swift */,
+				0CE26E68217C9F6000161521 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift */,
+				0CE26E69217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift */,
+				0CE26E6A217C9F6000161521 /* NVActivityIndicatorAnimationBallScale.swift */,
+				0CE26E6B217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZag.swift */,
+				0CE26E6C217C9F6000161521 /* NVActivityIndicatorAnimationBallBeat.swift */,
+				0CE26E6D217C9F6000161521 /* NVActivityIndicatorAnimationSemiCircleSpin.swift */,
+				0CE26E6E217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRipple.swift */,
+				0CE26E6F217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift */,
+				0CE26E70217C9F6000161521 /* NVActivityIndicatorAnimationSquareSpin.swift */,
+				0CE26E71217C9F6000161521 /* NVActivityIndicatorAnimationBallRotateChase.swift */,
+				0CE26E72217C9F6000161521 /* NVActivityIndicatorAnimationBallPulse.swift */,
+				0CE26E73217C9F6000161521 /* NVActivityIndicatorAnimationBlank.swift */,
+				0CE26E74217C9F6000161521 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift */,
+				0CE26E75217C9F6000161521 /* NVActivityIndicatorAnimationAudioEqualizer.swift */,
+				0CE26E76217C9F6000161521 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift */,
+				0CE26E77217C9F6000161521 /* NVActivityIndicatorAnimationBallGridBeat.swift */,
+				0CE26E78217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleMultiple.swift */,
+				0CE26E79217C9F6000161521 /* NVActivityIndicatorAnimationLineScale.swift */,
+				0CE26E7A217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift */,
+				0CE26E7B217C9F6000161521 /* NVActivityIndicatorAnimationPacman.swift */,
+				0CE26E7C217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseSync.swift */,
+				0CE26E7D217C9F6000161521 /* NVActivityIndicatorAnimationCubeTransition.swift */,
+				0CE26E7E217C9F6000161521 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift */,
+				0CE26E7F217C9F6000161521 /* NVActivityIndicatorAnimationLineScaleParty.swift */,
+				0CE26E80217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift */,
+				0CE26E81217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseRise.swift */,
+				0CE26E82217C9F6000161521 /* NVActivityIndicatorAnimationOrbit.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		0CFAAD1D1E21BA2D008D5DBB = {
+			isa = PBXGroup;
+			children = (
+				0CA5F918213D09FA000E525D /* Fonts */,
+				F0DA109796252D79FC759E97 /* Frameworks */,
+				0CE26E58217C9F6000161521 /* NVActivityIndicatorView */,
+				0CFAAD271E21BA2D008D5DBB /* Products */,
+				0CFAAD281E21BA2D008D5DBB /* TrendPlay */,
+				0CFAAD3F1E21BA2D008D5DBB /* TrendPlayTests */,
+				828DD32A8F9061FB68271918 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0CFAAD271E21BA2D008D5DBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0CFAAD261E21BA2D008D5DBB /* TrendPlay.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0CFAAD281E21BA2D008D5DBB /* TrendPlay */ = {
+			isa = PBXGroup;
+			children = (
+				0C81992121C8CD3A00BFAC0E /* StatsDatabase.db */,
+				0C9106CC21882A950058D8F6 /* GoogleService-Info.plist */,
+				0CFAAD371E21BA2D008D5DBB /* Info.plist */,
+				0CE2B79B1F6BB44500215BFD /* TrendPlayLogo.png */,
+				0CFAAD291E21BA2D008D5DBB /* AppDelegate.swift */,
+				0CA03242217EFF7900A52002 /* BetterSegmentedControl.swift */,
+				0CA03243217EFF7900A52002 /* BetterSegmentedControlSegment.swift */,
+				0C14B2D52166FB8D00CED42B /* CircularProgress.swift */,
+				0CAFAEFC1F3D93A300AAAF96 /* CustomTableViewCell.swift */,
+				0CFAAD2B1E21BA2D008D5DBB /* HomeViewController.swift */,
+				0CA03246217EFF7900A52002 /* IconSegment.swift */,
+				0CA03247217EFF7900A52002 /* LabelSegment.swift */,
+				0CA03241217EFF7900A52002 /* Options.swift */,
+				0CD1CC67214CA7B200703A84 /* PlayerDashboardViewController.swift */,
+				0CA9DB971EC9FC8800CF8946 /* PlayerNavigationController.swift */,
+				0CD1CC692150A51E00703A84 /* PlayerSearchableMultiSelectViewController.swift */,
+				0CD1CC6A2150A51F00703A84 /* PlayerSliderViewController.swift */,
+				0CE2EEE11EABE00B00ABC66B /* PlayerViewController.swift */,
+				0CC80C791F5B872F00F1742A /* SearchableMultiSelectViewController.swift */,
+				0CC80C771F5B862400F1742A /* SliderViewController.swift */,
+				0CE2B7951F6BAC4000215BFD /* SplashScreenViewController.swift */,
+				0CA9DB9A1ECA091B00CF8946 /* TabBarController.swift */,
+				0C52BCA21E4138260099F164 /* TeamDashboardViewController.swift */,
+				0CA9DB951EC9FC7100CF8946 /* TeamNavigationController.swift */,
+				0CE2EEDF1EABDFF900ABC66B /* TeamViewController.swift */,
+				0C4B59DE2163919E00B77337 /* Images.xcassets */,
+				0CFAAD341E21BA2D008D5DBB /* LaunchScreen.storyboard */,
+				0CFAAD2F1E21BA2D008D5DBB /* Main.storyboard */,
+			);
+			path = TrendPlay;
+			sourceTree = "<group>";
+		};
+		0CFAAD3F1E21BA2D008D5DBB /* TrendPlayTests */ = {
+			isa = PBXGroup;
+			children = (
+				0CFAAD401E21BA2D008D5DBB /* TrendPlayTests.swift */,
+				0CFAAD421E21BA2D008D5DBB /* Info.plist */,
+			);
+			path = TrendPlayTests;
+			sourceTree = "<group>";
+		};
+		828DD32A8F9061FB68271918 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65CA9ACC63F9F2D9B56CF282 /* Pods-TrendPlay.debug.xcconfig */,
+				34F5CEADA6CCE2A0A75496CF /* Pods-TrendPlay.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F0DA109796252D79FC759E97 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C81992B21C8CDFD00BFAC0E /* SwiftRangeSlider.framework */,
+				0C81992921C8CDF700BFAC0E /* MaterialComponents.framework */,
+				0C81992721C8CDEF00BFAC0E /* FMDB.framework */,
+				0C81992521C8CDE800BFAC0E /* Floaty.framework */,
+				0C81992321C8CDE000BFAC0E /* Eureka.framework */,
+				0CFBA256213E8581000BACBC /* libsqlite3.tbd */,
+				FB44532CDDFA6BD85B46C7CB /* Pods_TrendPlay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CFAAD251E21BA2D008D5DBB /* TrendPlay */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0CFAAD451E21BA2D008D5DBB /* Build configuration list for PBXNativeTarget "TrendPlay" */;
+			buildPhases = (
+				41BAF046C7553DC2A0A79E92 /* [CP] Check Pods Manifest.lock */,
+				0CFAAD221E21BA2D008D5DBB /* Sources */,
+				0CFAAD231E21BA2D008D5DBB /* Frameworks */,
+				0CFAAD241E21BA2D008D5DBB /* Resources */,
+				2CC2EE40422F3C9E36350887 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TrendPlay;
+			productName = TrendPlay;
+			productReference = 0CFAAD261E21BA2D008D5DBB /* TrendPlay.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0CFAAD1E1E21BA2D008D5DBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Trending Productions LLC";
+				TargetAttributes = {
+					0CFAAD251E21BA2D008D5DBB = {
+						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0CFAAD211E21BA2D008D5DBB /* Build configuration list for PBXProject "TrendPlay" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0CFAAD1D1E21BA2D008D5DBB;
+			productRefGroup = 0CFAAD271E21BA2D008D5DBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0CFAAD251E21BA2D008D5DBB /* TrendPlay */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0CFAAD241E21BA2D008D5DBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CA5F9AB213D0CAD000E525D /* SF-Pro-Display-Semibold.otf in Resources */,
+				0CA5F9B3213D0CAD000E525D /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				0CA5F974213D09FB000E525D /* SFCompactDisplay-Black.otf in Resources */,
+				0CA5F97C213D09FB000E525D /* SFCompactDisplay-Ultralight.otf in Resources */,
+				0CA5F96F213D09FB000E525D /* SFCompactDisplay-Light.otf in Resources */,
+				0CA5F9B0213D0CAD000E525D /* SF-Pro-Display-Ultralight.otf in Resources */,
+				0CA5F9D8213D1261000E525D /* Roboto-Thin.ttf in Resources */,
+				0CA5F9CF213D1261000E525D /* Roboto-Regular.ttf in Resources */,
+				0CA5F972213D09FB000E525D /* SFCompactDisplay-Semibold.otf in Resources */,
+				0CA5F9B4213D0CAD000E525D /* SF-Pro-Display-Black.otf in Resources */,
+				0CA5F9B2213D0CAD000E525D /* SF-Pro-Display-LightItalic.otf in Resources */,
+				0CA5F9E7213D1277000E525D /* RobotoCondensed-Regular.ttf in Resources */,
+				0CA5F9E3213D1277000E525D /* RobotoCondensed-Light.ttf in Resources */,
+				0CA5F9A0213D0CAD000E525D /* SF-Pro-Display-Thin.otf in Resources */,
+				0CE2B79C1F6BB44500215BFD /* TrendPlayLogo.png in Resources */,
+				0CA5F9AE213D0CAD000E525D /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				0CA5F975213D09FB000E525D /* SFCompactDisplay-Regular.otf in Resources */,
+				0CA5F9A3213D0CAD000E525D /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				0CA5F9D9213D1261000E525D /* Roboto-Black.ttf in Resources */,
+				0CA5F9A4213D0CAD000E525D /* SF-Pro-Display-Light.otf in Resources */,
+				0CA5F9A7213D0CAD000E525D /* SF-Pro-Display-Bold.otf in Resources */,
+				0CA5F9B1213D0CAD000E525D /* SF-Pro-Display-UltralightItalic.otf in Resources */,
+				0C81992221C8CD3A00BFAC0E /* StatsDatabase.db in Resources */,
+				0CA5F9A9213D0CAD000E525D /* SF-Pro-Display-Heavy.otf in Resources */,
+				0CA5F9CD213D1261000E525D /* Roboto-Medium.ttf in Resources */,
+				0CA5F9D7213D1261000E525D /* Roboto-Bold.ttf in Resources */,
+				0CA5F9A8213D0CAD000E525D /* SF-Pro-Display-Medium.otf in Resources */,
+				0CA5F973213D09FB000E525D /* SFCompactDisplay-Medium.otf in Resources */,
+				0CA5F9AF213D0CAD000E525D /* SF-Pro-Display-HeavyItalic.otf in Resources */,
+				0CA5F9B9213D0CAD000E525D /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				0CFAAD361E21BA2D008D5DBB /* LaunchScreen.storyboard in Resources */,
+				0CA5F96C213D09FB000E525D /* SFCompactDisplay-Heavy.otf in Resources */,
+				0CA5F9A1213D0CAD000E525D /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				0C4B59DF2163919F00B77337 /* Images.xcassets in Resources */,
+				0CA5F97A213D09FB000E525D /* SFCompactDisplay-Bold.otf in Resources */,
+				0CFAAD311E21BA2D008D5DBB /* Main.storyboard in Resources */,
+				0CA5F9A5213D0CAD000E525D /* SF-Pro-Display-Regular.otf in Resources */,
+				0CA5F9E2213D1277000E525D /* RobotoCondensed-Bold.ttf in Resources */,
+				0CA5F9CE213D1261000E525D /* Roboto-Light.ttf in Resources */,
+				0CA5F980213D09FB000E525D /* SFCompactDisplay-Thin.otf in Resources */,
+				0CA5F9BC213D0CAD000E525D /* SF-Pro-Display-BoldItalic.otf in Resources */,
+				0C9106CD21882A960058D8F6 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CC2EE40422F3C9E36350887 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TrendPlay/Pods-TrendPlay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/ARChromeActivity/ARChromeActivity.framework",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/Floaty/Floaty.framework",
+				"${BUILT_PRODUCTS_DIR}/KINWebBrowser/KINWebBrowser.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFInternationalization/MDFInternationalization.framework",
+				"${BUILT_PRODUCTS_DIR}/MDFTextAccessibility/MDFTextAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/MaterialComponents/MaterialComponents.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionAnimator/MotionAnimator.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionInterchange/MotionInterchange.framework",
+				"${BUILT_PRODUCTS_DIR}/MotionTransitioning/MotionTransitioning.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftRangeSlider/SwiftRangeSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/TTRangeSlider/TTRangeSlider.framework",
+				"${BUILT_PRODUCTS_DIR}/TUSafariActivity/TUSafariActivity.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ARChromeActivity.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Floaty.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KINWebBrowser.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFInternationalization.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MDFTextAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MaterialComponents.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionAnimator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionInterchange.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MotionTransitioning.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftRangeSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTRangeSlider.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TUSafariActivity.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrendPlay/Pods-TrendPlay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		41BAF046C7553DC2A0A79E92 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TrendPlay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0CFAAD221E21BA2D008D5DBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CE26EA2217C9F6000161521 /* NVActivityIndicatorAnimationPacman.swift in Sources */,
+				0CD1CC6C2150A51F00703A84 /* PlayerSliderViewController.swift in Sources */,
+				0CE26EA7217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOutRapid.swift in Sources */,
+				0CA0324A217EFF7A00A52002 /* Options.swift in Sources */,
+				0CE26E98217C9F6000161521 /* NVActivityIndicatorAnimationBallRotateChase.swift in Sources */,
+				0CA9DB981EC9FC8800CF8946 /* PlayerNavigationController.swift in Sources */,
+				0CE26E83217C9F6000161521 /* NVActivityIndicatorAnimationDelegate.swift in Sources */,
+				0CE26E8C217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotateMultiple.swift in Sources */,
+				0CE26E8B217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotate.swift in Sources */,
+				0CAFAEFD1F3D93A300AAAF96 /* CustomTableViewCell.swift in Sources */,
+				0CE26E8A217C9F6000161521 /* NVActivityIndicatorAnimationBallGridPulse.swift in Sources */,
+				0CE26E96217C9F6000161521 /* NVActivityIndicatorAnimationBallClipRotatePulse.swift in Sources */,
+				0CE26E95217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRipple.swift in Sources */,
+				0CE26E99217C9F6000161521 /* NVActivityIndicatorAnimationBallPulse.swift in Sources */,
+				0CE26EA4217C9F6000161521 /* NVActivityIndicatorAnimationCubeTransition.swift in Sources */,
+				0CE26EA5217C9F6000161521 /* NVActivityIndicatorAnimationBallSpinFadeLoader.swift in Sources */,
+				0CE26E9D217C9F6000161521 /* NVActivityIndicatorAnimationTriangleSkewSpin.swift in Sources */,
+				0CE2B7971F6BAC4000215BFD /* SplashScreenViewController.swift in Sources */,
+				0CE26E9C217C9F6000161521 /* NVActivityIndicatorAnimationAudioEqualizer.swift in Sources */,
+				0CE26E85217C9F6000161521 /* NVActivityIndicatorViewable.swift in Sources */,
+				0CE26E9F217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleMultiple.swift in Sources */,
+				0CD1CC6B2150A51F00703A84 /* PlayerSearchableMultiSelectViewController.swift in Sources */,
+				0CE26E9E217C9F6000161521 /* NVActivityIndicatorAnimationBallGridBeat.swift in Sources */,
+				0CE26E93217C9F6000161521 /* NVActivityIndicatorAnimationBallBeat.swift in Sources */,
+				0CE26E9B217C9F6000161521 /* NVActivityIndicatorAnimationCircleStrokeSpin.swift in Sources */,
+				0CE26E87217C9F6000161521 /* NVActivityIndicatorView.swift in Sources */,
+				0CFAAD2A1E21BA2D008D5DBB /* AppDelegate.swift in Sources */,
+				0CE26EA0217C9F6000161521 /* NVActivityIndicatorAnimationLineScale.swift in Sources */,
+				0CC80C781F5B862400F1742A /* SliderViewController.swift in Sources */,
+				0CA0324C217EFF7A00A52002 /* BetterSegmentedControlSegment.swift in Sources */,
+				0CE2EEE01EABDFF900ABC66B /* TeamViewController.swift in Sources */,
+				0CE26E8E217C9F6000161521 /* NVActivityIndicatorAnimationLineScalePulseOut.swift in Sources */,
+				0CA0324E217EFF7A00A52002 /* IconSegment.swift in Sources */,
+				0CE26E9A217C9F6000161521 /* NVActivityIndicatorAnimationBlank.swift in Sources */,
+				0CE26E91217C9F6000161521 /* NVActivityIndicatorAnimationBallScale.swift in Sources */,
+				0CE26E84217C9F6000161521 /* NVActivityIndicatorPresenter.swift in Sources */,
+				0CA0324B217EFF7A00A52002 /* BetterSegmentedControl.swift in Sources */,
+				0CA9DB961EC9FC7100CF8946 /* TeamNavigationController.swift in Sources */,
+				0CA0324F217EFF7A00A52002 /* LabelSegment.swift in Sources */,
+				0CE26E86217C9F6000161521 /* NVActivityIndicatorShape.swift in Sources */,
+				0CE26EA8217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseRise.swift in Sources */,
+				0C52BCA31E4138260099F164 /* TeamDashboardViewController.swift in Sources */,
+				0CE26EA6217C9F6000161521 /* NVActivityIndicatorAnimationLineScaleParty.swift in Sources */,
+				0CE26E90217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZagDeflect.swift in Sources */,
+				0CE26E97217C9F6000161521 /* NVActivityIndicatorAnimationSquareSpin.swift in Sources */,
+				0CE26EA9217C9F6000161521 /* NVActivityIndicatorAnimationOrbit.swift in Sources */,
+				0CE26E94217C9F6000161521 /* NVActivityIndicatorAnimationSemiCircleSpin.swift in Sources */,
+				0CA9DB9B1ECA091B00CF8946 /* TabBarController.swift in Sources */,
+				0CE26E8D217C9F6000161521 /* NVActivityIndicatorAnimationBallTrianglePath.swift in Sources */,
+				0C14B2D62166FB8D00CED42B /* CircularProgress.swift in Sources */,
+				0CE26E89217C9F6000161521 /* NVActivityIndicatorAnimationBallRotate.swift in Sources */,
+				0CC80C7A1F5B872F00F1742A /* SearchableMultiSelectViewController.swift in Sources */,
+				0CE26EA3217C9F6000161521 /* NVActivityIndicatorAnimationBallPulseSync.swift in Sources */,
+				0CE26E92217C9F6000161521 /* NVActivityIndicatorAnimationBallZigZag.swift in Sources */,
+				0CE26EA1217C9F6000161521 /* NVActivityIndicatorAnimationBallScaleRippleMultiple.swift in Sources */,
+				0CD1CC68214CA7B200703A84 /* PlayerDashboardViewController.swift in Sources */,
+				0CE2EEE21EABE00B00ABC66B /* PlayerViewController.swift in Sources */,
+				0CE26E8F217C9F6000161521 /* NVActivityIndicatorAnimationLineSpinFadeLoader.swift in Sources */,
+				0CFAAD2C1E21BA2D008D5DBB /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0CFAAD2F1E21BA2D008D5DBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CFAAD301E21BA2D008D5DBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0CFAAD341E21BA2D008D5DBB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0CFAAD351E21BA2D008D5DBB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0CFAAD431E21BA2D008D5DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CFAAD441E21BA2D008D5DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0CFAAD461E21BA2D008D5DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65CA9ACC63F9F2D9B56CF282 /* Pods-TrendPlay.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2ZB72UV5Q;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(SRCROOT)/**",
+				);
+				INFOPLIST_FILE = TrendPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrendingProductions.TrendPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0CFAAD471E21BA2D008D5DBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F5CEADA6CCE2A0A75496CF /* Pods-TrendPlay.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C2ZB72UV5Q;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = TrendPlay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.TrendingProductions.TrendPlay;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = NO;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0CFAAD211E21BA2D008D5DBB /* Build configuration list for PBXProject "TrendPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFAAD431E21BA2D008D5DBB /* Debug */,
+				0CFAAD441E21BA2D008D5DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0CFAAD451E21BA2D008D5DBB /* Build configuration list for PBXNativeTarget "TrendPlay" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0CFAAD461E21BA2D008D5DBB /* Debug */,
+				0CFAAD471E21BA2D008D5DBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0CFAAD1E1E21BA2D008D5DBB /* Project object */;
+}
