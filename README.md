@@ -6,7 +6,7 @@ TrendPlay
 * Universal devices running iOS 12.1
 
 ## How to use this code
-* Clone TrendPlay repo to local desktop while maintaining GitHub folder structure
+* Clone TrendPlay repo to local desktop; maintain original file strucutre
 * Unzip TrendPlay/TrendPlay/StatsDatabase.db.zip
 * Ensure the following path exists after unzipping:  TrendPlay/TrendPlay/StatsDatabase.db
 
